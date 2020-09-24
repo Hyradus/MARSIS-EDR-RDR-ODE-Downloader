@@ -123,7 +123,7 @@ ________________________________________________________________________________
 **Step 4 - In the opened windows select:**
 * **Format**: Comma Separated Value[CSV]
 * **File name**: selecte path and savename of choice
-* Then expand "Select fields to export and their export options" and flag ONLY **Orbit**
+* Then expand "Select fields to export and their export options" and flag all or ONLY **Orbit**
 * **Click on ok**
 
 ![alt text](Readme_images/Feat_sel_4.jpg?raw=true "Step 4")
