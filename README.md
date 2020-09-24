@@ -1,4 +1,4 @@
-# SCRIPT for search and download MARSIS FlashMemory RAW geometry files and radargrams
+# SCRIPT for search and download MARSIS EDR/RDR files from PDS
 ### @author: Giacomo Nodjoumi - g.nodjoumi@jacobs-university.de
 
 # README
@@ -35,7 +35,7 @@ The script can work both passing some/all arguments or none ***If NO argument is
 
 # CONDA environment
 
-To best use the script a conda environment configuration file is provided: ***MARSIS_py38.yml***
+To best use the script a conda environment configuration file is provided: ***MARSISv2_py38.yml***
 
 ## Install anaconda
 
@@ -48,8 +48,8 @@ with terminal move to the downloaded folder and run:
 
 ## Create the environment using the yml
 
-Using the terminal, move to the folder where is located MARSIS_py38.yml and run:
-`conda env create -f MARSIS_py38.yml`
+Using the terminal, move to the folder where is located MARSISv2_py38.yml and run:
+`conda env create -f MARSISv2_py38.yml`
 
 ## Activate MARSIS_py38 environment
 
@@ -61,18 +61,8 @@ Just run:
 To execute, simple run the following code `python MARSIS_FTP_RETREIVER.py`
 It will ask every arguments.
 
-## Arguments to be passed
+## Arguments that can be passed
 
-### Server
--- server : ip address of common name of the server.
-default is : 150.146.129.243'
-### FlashMemory ftp path
---fmdir : flashmemory full path where are store the *.DAT and PNG.
-default is: '/MARSIS_Flash_Memory_geometry/Mars
-### User
---user : ftp login user
-### Password
---pwd : ftp login passeord
 ### Orbits numbers csv
 --orbits: csv file containing all orbit to download.
 
@@ -93,7 +83,8 @@ and orbit numbers as new rows. e.g.
 * **QGIS CSV**
 Simply is a csv created by saving selected features directly in QGIS.
 
-
+### Data type
+--dtype: edr, EDR, rdr, RDR
 
 **See below for details**
 
@@ -101,6 +92,8 @@ Simply is a csv created by saving selected features directly in QGIS.
 --ddir : is the folder where the files will be downloaded
 default is a folder called "downloads+datetime".
 Automatically created in the directory where is executed the script
+
+If NO argument is passed, defaults are used and interactively requested the others.
 
 
 
@@ -143,12 +136,12 @@ Thanks to @aprossi
 
 ## General example
 
-Just run `python MARSIS_FTP_RETREIVER.py --ddir=/path-to-download-folder --orbits=/path-to-csv-orbit-file`
+Just run `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/path-to-download-folder --orbits=/path-to-csv-orbit-file`
 
 ## Test example
 
 Here the example code shown in the image
-`python MARSIS_FTP_DATA_RETRIEVER.py --ddir=/media/gnodj/W-DATS/MARSIS_Data/ --orbits=/media/gnodj/W-DATS/MARSIS_Data/req_orbits_qgis.csv`
+`python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/media/gnodj/W-DATS/MARSIS_Data/ --orbits=/media/gnodj/W-DATS/MARSIS_Data/req_orbits_qgis.csv`
 
 ![alt text](Readme_images/terminal_run.jpg?raw=true "Test")
 
