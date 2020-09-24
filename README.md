@@ -104,15 +104,15 @@ ________________________________________________________________________________
 **Orbit numbers can be retreived from QGIS**
 **You can interrogate every orbit by using the info tool**
 **Step 1m - Left click on each track of interest, a side panel will open with all relative informations, take notes of the orbit number and create a CSV file as described above.**
-![alt text](Readme_Images/ManualInspect.jpg?raw=true "Step 2m")
+![alt text](Readme_Images/ManualInspect.jpg?raw=true "Step 1m")
 
 ## Manually multiple orbits 
 
 **Step 1 - select features of interests**
-![alt text](Readme_Images/MultipleSelect.jpg?raw=true "Step 2")
+![alt text](Readme_Images/MultipleSelect.jpg?raw=true "Step 1")
 
 **Step 2 - Right click on the geopackage layer and select export->save selected features as**
-![alt text](Readme_Images/export_1.jpg?raw=true "Step 3")
+![alt text](Readme_Images/export_1.jpg?raw=true "Step 2")
 
 **Step 3 - In the opened windows select:**
 * **Format**: Comma Separated Value[CSV]
@@ -120,7 +120,7 @@ ________________________________________________________________________________
 * Then expand "Select fields to export and their export options" and flag all or ONLY **Orbit**
 * **Click on ok**
 
-![alt text](Readme_Images/export_2.jpg?raw=true "Step 4")
+![alt text](Readme_Images/export_2.jpg?raw=true "Step 3")
 
 # Examples
 
@@ -138,6 +138,3 @@ Here the example code shown in the image
 `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py 
 
 ![alt text](Readme_Images/terminal_run.jpg?raw=true "Test")
-
-
-
