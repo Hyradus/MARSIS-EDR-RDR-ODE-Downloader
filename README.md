@@ -102,30 +102,25 @@ ________________________________________________________________________________
 
 ## Manually orbit by orbit
 **Orbit numbers can be retreived from QGIS**
-**Step 1m - You can interrogate every orbit by using the info tool**
-![alt text](Readme_images/Feat_info_1.jpg?raw=true "Step 1m")
-
-**Step 2m - Left click on each track of interest, a side panel will open with all relative informations, take notes of the orbit number and create a CSV file as described above.**
-![alt text](Readme_images/Feat_info_2.jpg?raw=true "Step 2m")
+**You can interrogate every orbit by using the info tool**
+**Step 1m - Left click on each track of interest, a side panel will open with all relative informations, take notes of the orbit number and create a CSV file as described above.**
+![alt text](Readme_Images/ManualInspect.jpg?raw=true "Step 2m")
 
 ## Manually multiple orbits 
 
-**Step 1 - Activate the feature selection tool**
-![alt text](Readme_images/Feat_sel_1.jpg?raw=true "Step 1")
+**Step 1 - select features of interests**
+![alt text](Readme_Images/MultipleSelect.jpg?raw=true "Step 2")
 
-**Step 2 - select features of interests**
-![alt text](Readme_images/Feat_sel_2.jpg?raw=true "Step 2")
+**Step 2 - Right click on the geopackage layer and select export->save selected features as**
+![alt text](Readme_Images/export_1.jpg?raw=true "Step 3")
 
-**Step 3 - Right click on the geopackage layer and select export->save selected features as**
-![alt text](Readme_images/Feat_sel_3.jpg?raw=true "Step 3")
-
-**Step 4 - In the opened windows select:**
+**Step 3 - In the opened windows select:**
 * **Format**: Comma Separated Value[CSV]
 * **File name**: selecte path and savename of choice
 * Then expand "Select fields to export and their export options" and flag all or ONLY **Orbit**
 * **Click on ok**
 
-![alt text](Readme_images/Feat_sel_4.jpg?raw=true "Step 4")
+![alt text](Readme_Images/export_2.jpg?raw=true "Step 4")
 
 # Examples
 
@@ -135,14 +130,14 @@ Thanks to @aprossi
 
 ## General example
 
-Just run `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/path-to-download-folder --orbits=/path-to-csv-orbit-file`
+Just run `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py 
 
 ## Test example
 
 Here the example code shown in the image
-`python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/media/gnodj/W-DATS/MARSIS_Data/ --orbits=/media/gnodj/W-DATS/MARSIS_Data/req_orbits_qgis.csv`
+`python MARSIS_EDR-RDR_PDS-DOWNLOADER.py 
 
-![alt text](Readme_images/terminal_run.jpg?raw=true "Test")
+![alt text](Readme_Images/terminal_run.jpg?raw=true "Test")
 
 
 
