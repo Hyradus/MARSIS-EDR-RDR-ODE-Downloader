@@ -22,11 +22,10 @@ ________________________________________________________________________________
 
 The script in brief:
 
-* Retreive file geometry list from the ftp server
+* Read EDR/RDR geopackage containing all orbits
 * Search user_requested orbits
 * Report missing orbits
-* Ask for download RAW geometry files and PNG files
-* Computer Size of the download and ask for confirmation
+* Compute size of the download and ask for confirmation
 * Download requested orbits and ask if user want to download more
 
 ** See example at the end of this readme**
@@ -123,7 +122,7 @@ ________________________________________________________________________________
 **Step 4 - In the opened windows select:**
 * **Format**: Comma Separated Value[CSV]
 * **File name**: selecte path and savename of choice
-* Then expand "Select fields to export and their export options" and flag ONLY **Orbit**
+* Then expand "Select fields to export and their export options" and flag all or ONLY **Orbit**
 * **Click on ok**
 
 ![alt text](Readme_images/Feat_sel_4.jpg?raw=true "Step 4")
