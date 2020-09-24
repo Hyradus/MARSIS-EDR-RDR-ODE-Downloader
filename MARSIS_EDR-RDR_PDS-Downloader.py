@@ -86,9 +86,9 @@ def make_folder(name):
 
 def readGPKG(datatype):
     if datatype in ['rdr', 'RDR']:
-        gpkgDF=gpd.read_file('./mars_mex_marsis_rdrss_c0l.gpkg')
+        gpkgDF=gpd.read_file('./QGIS_project/mars_mex_marsis_rdrss_c0l.gpkg')
     elif datatype in ['edr']:
-        gpkgDF=gpd.read_file('./mars_mex_marsis_edr_c0l.gpkg')
+        gpkgDF=gpd.read_file('./QGIS_project/mars_mex_marsis_edr_c0l.gpkg')
     return(gpkgDF)
 
 def csv2orbits(csv):
