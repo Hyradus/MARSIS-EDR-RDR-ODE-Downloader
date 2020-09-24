@@ -22,11 +22,10 @@ ________________________________________________________________________________
 
 The script in brief:
 
-* Retreive file geometry list from the ftp server
+* Read EDR/RDR geopackage containing all orbits
 * Search user_requested orbits
 * Report missing orbits
-* Ask for download RAW geometry files and PNG files
-* Computer Size of the download and ask for confirmation
+* Compute size of the download and ask for confirmation
 * Download requested orbits and ask if user want to download more
 
 ** See example at the end of this readme**
