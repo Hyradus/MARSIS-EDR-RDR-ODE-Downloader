@@ -4,18 +4,25 @@
 # README
 ________________________________________________________________________________
 # Table of Contents
+- [Pipeline/workflow description](#pipeline-workflow-description)
+- [CONDA environment](#conda-environment)
+  * [Install anaconda](#install-anaconda)
+  * [Create the environment using the yml](#create-the-environment-using-the-yml)
+  * [Activate MARSIS_py38 environment](#activate-marsis-py38-environment)
+- [Script execution](#script-execution)
+  * [Arguments that can be passed](#arguments-that-can-be-passed)
+    + [Orbits numbers csv](#orbits-numbers-csv)
+    + [Data type](#data-type)
+    + [Download directory](#download-directory)
+- [QGIS CSV CREATION](#qgis-csv-creation)
+  * [Manually orbit by orbit](#manually-orbit-by-orbit)
+  * [Manually multiple orbits](#manually-multiple-orbits)
+- [Examples](#examples)
+  * [Conda environment installation and script execution](#conda-environment-installation-and-script-execution)
+  * [General example](#general-example)
+  * [Test example](#test-example)
 
-* [Pipeline/workflow description](#Pipeline/workflow descriptione)
-* [CONDA Environment](#CONDA Environment)
-    * [Install Anaconda](##Install anaconda)
-    * [Create the environment using the yml](## Create the environment using the yml)
-    * [Activate MARSIS_py38 environment](## Activate MARSIS_py38 environment)
-* [Script execution](# Script execution)
-    * [Arguments to be passed](## Arguments to be passed)
-* [Examples](# Examples)
-    * [Conda environment installation and script execution](## Conda environment installation and script execution)
-    * [General Example](## General example)
-    * [Test example](## Test example)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ________________________________________________________________________________
 # Pipeline/workflow description
