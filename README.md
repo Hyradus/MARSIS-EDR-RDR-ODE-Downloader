@@ -22,8 +22,6 @@ ________________________________________________________________________________
   * [General example](#general-example)
   * [Test example](#test-example)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ________________________________________________________________________________
 # Pipeline/workflow description
 
