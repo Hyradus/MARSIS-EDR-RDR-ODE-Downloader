@@ -1,5 +1,6 @@
 # SCRIPT for search and download MARSIS EDR/RDR files from ODE using orbit number
 ### @author: Giacomo Nodjoumi - g.nodjoumi@jacobs-university.de
+[![DOI](https://zenodo.org/badge/298257015.svg)](https://zenodo.org/badge/latestdoi/298257015)
 
 # README
 ________________________________________________________________________________
