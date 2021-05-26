@@ -1,0 +1,29 @@
+name: MARSISv2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas
+  - ipywidgets
+  - ipython
+  - ipython_genutils
+  - joblib
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - nodejs
+  - numpy
+  - opencv
+  - obspy
+  - pandas
+  - pillow
+  - pip=20
+  - psutil
+  - python=3.8.5
+  - rasterio
+  - scikit-learn
+  - shapely
+  - tqdm
+  - widgetsnbextension
+  - pip:
+    - beautifulsoup4
