@@ -1,27 +1,21 @@
-# SCRIPT for search and download MARSIS EDR/RDR files from ODE using orbit number
+# SCRIPT for search and download MARSIS EDR/RDR files from PDS
 ### @author: Giacomo Nodjoumi - g.nodjoumi@jacobs-university.de
-[![DOI](https://zenodo.org/badge/298257015.svg)](https://zenodo.org/badge/latestdoi/298257015)
 
 # README
 ________________________________________________________________________________
 # Table of Contents
-- [Pipeline/workflow description](#pipeline-workflow-description)
-- [CONDA environment](#conda-environment)
-  * [Install anaconda](#install-anaconda)
-  * [Create the environment using the yml](#create-the-environment-using-the-yml)
-  * [Activate MARSIS_py38 environment](#activate-marsis-py38-environment)
-- [Script execution](#script-execution)
-  * [Arguments that can be passed](#arguments-that-can-be-passed)
-    + [Orbits numbers csv](#orbits-numbers-csv)
-    + [Data type](#data-type)
-    + [Download directory](#download-directory)
-- [QGIS CSV CREATION](#qgis-csv-creation)
-  * [Manually orbit by orbit](#manually-orbit-by-orbit)
-  * [Manually multiple orbits](#manually-multiple-orbits)
-- [Examples](#examples)
-  * [Conda environment installation and script execution](#conda-environment-installation-and-script-execution)
-  * [General example](#general-example)
-  * [Test example](#test-example)
+
+* [Pipeline/workflow description](#Pipeline/workflow descriptione)
+* [CONDA Environment](#CONDA Environment)
+    * [Install Anaconda](##Install anaconda)
+    * [Create the environment using the yml](## Create the environment using the yml)
+    * [Activate MARSIS_py38 environment](## Activate MARSIS_py38 environment)
+* [Script execution](# Script execution)
+    * [Arguments to be passed](## Arguments to be passed)
+* [Examples](# Examples)
+    * [Conda environment installation and script execution](## Conda environment installation and script execution)
+    * [General Example](## General example)
+    * [Test example](## Test example)
 
 ________________________________________________________________________________
 # Pipeline/workflow description
@@ -108,25 +102,30 @@ ________________________________________________________________________________
 
 ## Manually orbit by orbit
 **Orbit numbers can be retreived from QGIS**
-**You can interrogate every orbit by using the info tool**
-**Step 1m - Left click on each track of interest, a side panel will open with all relative informations, take notes of the orbit number and create a CSV file as described above.**
-![alt text](Readme_Images/ManualInspect.jpg?raw=true "Step 1m")
+**Step 1m - You can interrogate every orbit by using the info tool**
+![alt text](Readme_images/Feat_info_1.jpg?raw=true "Step 1m")
+
+**Step 2m - Left click on each track of interest, a side panel will open with all relative informations, take notes of the orbit number and create a CSV file as described above.**
+![alt text](Readme_images/Feat_info_2.jpg?raw=true "Step 2m")
 
 ## Manually multiple orbits 
 
-**Step 1 - select features of interests**
-![alt text](Readme_Images/MultipleSelect.jpg?raw=true "Step 1")
+**Step 1 - Activate the feature selection tool**
+![alt text](Readme_images/Feat_sel_1.jpg?raw=true "Step 1")
 
-**Step 2 - Right click on the geopackage layer and select export->save selected features as**
-![alt text](Readme_Images/export_1.jpg?raw=true "Step 2")
+**Step 2 - select features of interests**
+![alt text](Readme_images/Feat_sel_2.jpg?raw=true "Step 2")
 
-**Step 3 - In the opened windows select:**
+**Step 3 - Right click on the geopackage layer and select export->save selected features as**
+![alt text](Readme_images/Feat_sel_3.jpg?raw=true "Step 3")
+
+**Step 4 - In the opened windows select:**
 * **Format**: Comma Separated Value[CSV]
 * **File name**: selecte path and savename of choice
 * Then expand "Select fields to export and their export options" and flag all or ONLY **Orbit**
 * **Click on ok**
 
-![alt text](Readme_Images/export_2.jpg?raw=true "Step 3")
+![alt text](Readme_images/Feat_sel_4.jpg?raw=true "Step 4")
 
 # Examples
 
@@ -136,11 +135,14 @@ Thanks to @aprossi
 
 ## General example
 
-Just run `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py 
+Just run `python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/path-to-download-folder --orbits=/path-to-csv-orbit-file`
 
 ## Test example
 
 Here the example code shown in the image
-`python MARSIS_EDR-RDR_PDS-DOWNLOADER.py 
+`python MARSIS_EDR-RDR_PDS-DOWNLOADER.py --ddir=/media/gnodj/W-DATS/MARSIS_Data/ --orbits=/media/gnodj/W-DATS/MARSIS_Data/req_orbits_qgis.csv`
 
-![alt text](Readme_Images/terminal_run.jpg?raw=true "Test")
+![alt text](Readme_images/terminal_run.jpg?raw=true "Test")
+
+
+
